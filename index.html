@@ -3,30 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SKKU East Coast Team · Global Challenge 2027</title>
-<meta name="description" content="Five Sungkyunkwan University students following how AI moves from research to industry to society — Boston, New York, Washington DC, January 2027.">
+<title>AIming · SKKU Global Challenge 2027</title>
+<meta name="description" content="Five Sungkyunkwan University students following how AI moves from research to industry to society — New York and Boston, January 21–30, 2027.">
 <!-- 검색 노출 막기: 구글·네이버 등 검색 결과와 이미지 검색에 이 페이지와 사진이 뜨지 않게 함
      (링크를 받은 사람은 그대로 볼 수 있고, 링크 미리보기 카드도 그대로 뜸). 검색에 노출하려면 이 줄을 지우기 -->
 <meta name="robots" content="noindex, noimageindex">
 <!-- 링크 미리보기 (카톡·이메일·LinkedIn 등에 주소를 붙였을 때 뜨는 카드)
-     og-card.png = 얼굴 없이 팀 이름·질문·경로만 있는 1200×630 이미지. 이게 없으면 앱이 페이지의 첫 사진(팀원 얼굴)을 가져감.
-     이미지를 바꾸면 파일 이름도 바꿔야 카톡·LinkedIn이 예전 이미지를 다시 안 씀 (예: og-card-2.png) -->
+     og-card-2.png = 얼굴 없이 팀 이름·질문·경로만 있는 1200×630 이미지. 이게 없으면 앱이 페이지의 첫 사진(팀원 얼굴)을 가져감.
+     이미지를 바꾸면 파일 이름도 바꿔야 카톡·LinkedIn이 예전 이미지를 다시 안 씀 (예: og-card-3.png) -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://skku-east.github.io/">
-<meta property="og:site_name" content="SKKU East Coast Team">
-<meta property="og:title" content="SKKU East Coast Team · Global Challenge 2027">
-<meta property="og:description" content="Five Sungkyunkwan University students following how AI moves from research to industry to society — Boston, New York, Washington DC, January 2027.">
+<meta property="og:url" content="https://skku-aiming.github.io/">
+<meta property="og:site_name" content="AIming">
+<meta property="og:title" content="AIming · SKKU Global Challenge 2027">
+<meta property="og:description" content="Five Sungkyunkwan University students following how AI moves from research to industry to society — New York and Boston, January 21–30, 2027.">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ko_KR">
-<meta property="og:image" content="https://skku-east.github.io/og-card.png">
+<meta property="og:image" content="https://skku-aiming.github.io/og-card-2.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SKKU East Coast Team · Boston, New York, Washington DC">
+<meta property="og:image:alt" content="AIming · New York and Boston · January 21–30, 2027">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SKKU East Coast Team · Global Challenge 2027">
-<meta name="twitter:description" content="Five Sungkyunkwan University students following how AI moves from research to industry to society — Boston, New York, Washington DC, January 2027.">
-<meta name="twitter:image" content="https://skku-east.github.io/og-card.png">
+<meta name="twitter:title" content="AIming · SKKU Global Challenge 2027">
+<meta name="twitter:description" content="Five Sungkyunkwan University students following how AI moves from research to industry to society — New York and Boston, January 21–30, 2027.">
+<meta name="twitter:image" content="https://skku-aiming.github.io/og-card-2.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -112,6 +112,8 @@
   .stage .city small { display: block; color: var(--accent); font-weight: 500; font-size: 13px; }
   .stage p { color: var(--muted); font-size: 15px; }
   .stage .q { margin-top: 8px; font-size: 14px; color: var(--text); }
+  .where { margin-top: 18px; font-size: 15px; color: var(--muted); }
+  .where b { color: var(--text); font-weight: 600; }
   .stage .q::before { content: "Q. "; color: var(--accent); font-weight: 600; }
   @media (max-width: 600px) { .stage { grid-template-columns: 1fr; gap: 6px; } }
 
@@ -154,7 +156,7 @@
   /* news-like timeline */
   .news { width: 100%; border-collapse: collapse; font-size: 15px; }
   .news td { padding: 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
-  .news td:first-child { width: 120px; color: var(--muted); font-size: 14px; white-space: nowrap; }
+  .news td:first-child { width: 150px; padding-right: 16px; color: var(--muted); font-size: 14px; white-space: nowrap; }
 
   footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 13px; text-align: center; }
 
@@ -180,7 +182,7 @@
 
 <header>
   <div class="container">
-    <a class="site-title" href="#top"><b>SKKU</b> East Coast Team</a>
+    <a class="site-title" href="#top"><b>AIming</b> · SKKU</a>
     <nav>
       <a href="#journey"><span lang="en">Journey</span><span lang="ko">여정</span></a>
       <a href="#team"><span lang="en">Team</span><span lang="ko">팀</span></a>
@@ -202,8 +204,8 @@
   <!-- ABOUT -->
   <div class="about">
     <div>
-      <h1 lang="en">We are <b>SKKU East.</b></h1>
-      <h1 lang="ko">저희는 <b>SKKU East</b>입니다.</h1>
+      <h1 lang="en">We are <b>AIming.</b></h1>
+      <h1 lang="ko">저희는 <b>AIming</b>입니다.</h1>
       <div class="sub" lang="en">Sungkyunkwan University · Global Challenge Program · January 2027</div>
       <div class="sub" lang="ko">성균관대학교 · 글로벌 챌린지 프로그램 · 2027년 1월</div>
       <p lang="en">Five undergraduate students from <a href="https://www.skku.edu/eng/" target="_blank" rel="noopener">Sungkyunkwan University</a> in Seoul, Korea, studying software and AI.</p>
@@ -211,10 +213,10 @@
       <p lang="en">Through our university's Global Challenge program, we are visiting the U.S. East Coast to answer one question: <b>how does AI move from research to industry to society?</b> We want to see each step in person and learn from the people who make it happen.</p>
       <p lang="ko">학교의 글로벌 챌린지 프로그램으로 미국 동부를 방문해 한 가지 질문의 답을 찾으려 합니다. <b>AI는 어떻게 연구에서 산업으로, 그리고 사회로 이어질까?</b> 그 과정의 각 단계를 직접 보고, 그 일을 해내는 사람들에게 배우고 싶습니다.</p>
       <div class="badges">
-        <span class="badge" lang="en">📅 Mid–late January 2027</span>
-        <span class="badge" lang="ko">📅 2027년 1월 중순~하순</span>
-        <span class="badge" lang="en">📍 Boston · New York · Washington DC</span>
-        <span class="badge" lang="ko">📍 보스턴 · 뉴욕 · 워싱턴 DC</span>
+        <span class="badge" lang="en">📅 January 21–30, 2027</span>
+        <span class="badge" lang="ko">📅 2027년 1월 21~30일</span>
+        <span class="badge" lang="en">📍 New York · Boston</span>
+        <span class="badge" lang="ko">📍 뉴욕 · 보스턴</span>
         <span class="badge" lang="en">👥 5 students</span>
         <span class="badge" lang="ko">👥 학생 5명</span>
       </div>
@@ -222,9 +224,8 @@
     <aside class="route-card">
       <div class="label mono"><span lang="en">our route</span><span lang="ko">이동 경로</span></div>
       <ul class="route-list">
-        <li><b lang="en">Boston</b><b lang="ko">보스턴</b><span lang="en">Research</span><span lang="ko">연구</span></li>
-        <li><b lang="en">New York</b><b lang="ko">뉴욕</b><span lang="en">Industry</span><span lang="ko">산업</span></li>
-        <li><b lang="en">Washington DC</b><b lang="ko">워싱턴 DC</b><span lang="en">Society &amp; Policy</span><span lang="ko">사회 · 정책</span></li>
+        <li><b lang="en">New York</b><b lang="ko">뉴욕</b><span lang="en">Jan 21–24</span><span lang="ko">1월 21~24일</span></li>
+        <li><b lang="en">Boston · Cambridge</b><b lang="ko">보스턴 · 케임브리지</b><span lang="en">Jan 25–28</span><span lang="ko">1월 25~28일</span></li>
       </ul>
     </aside>
   </div>
@@ -235,7 +236,7 @@
          2) 아래 figure 코드를 주석 밖으로 꺼내기 (CSS는 이미 있음)
 
   <figure class="team-photo">
-    <div class="frame has-img"><img src="photos/team.jpg" alt="SKKU East Coast Team"></div>
+    <div class="frame has-img"><img src="photos/team.jpg" alt="Team AIming"></div>
     <figcaption><span lang="en">Our team at Sungkyunkwan University, Seoul</span><span lang="ko">서울 성균관대학교에서</span></figcaption>
   </figure>
   -->
@@ -243,37 +244,39 @@
   <!-- JOURNEY -->
   <section id="journey">
     <h2><span class="hash mono">#</span><span lang="en">Journey</span><span lang="ko">여정</span></h2>
-    <p class="lead" lang="en">The East Coast is one of the few places where every stage of AI's journey sits on a single train line.</p>
-    <p class="lead" lang="ko">미국 동부는 보스턴, 뉴욕, 워싱턴 DC가 기차로 이어져 있어 AI의 연구, 산업, 정책 현장을 한 번에 둘러볼 수 있는 몇 안 되는 곳입니다.</p>
+    <p class="lead" lang="en">We look at AI from three angles: research, industry, and society. We follow all three in both cities rather than assigning one to each.</p>
+    <p class="lead" lang="ko">AI를 연구, 산업, 사회라는 세 가지 관점에서 살펴봅니다. 도시마다 하나씩 나누지 않고, 두 도시 모두에서 세 관점을 함께 봅니다.</p>
     <div class="journey">
       <div class="stage">
-        <div class="city"><span lang="en">Boston · Cambridge</span><span lang="ko">보스턴 · 케임브리지</span><small lang="en">Research</small><small lang="ko">연구</small></div>
+        <div class="city"><span lang="en">Research</span><span lang="ko">연구</span><small class="mono">01</small></div>
         <div>
-          <p lang="en">Universities, research labs and robotics companies turning ideas into working technology.</p>
-          <p lang="ko">대학, 연구소, 로봇 기업이 아이디어를 실제로 작동하는 기술로 만드는 곳.</p>
-          <div class="q" lang="en">What does it take for research to become a real product?</div>
-          <div class="q" lang="ko">연구가 실제 제품이 되려면 무엇이 필요할까?</div>
+          <p lang="en">How researchers choose their problems, design and evaluate models, and work across fields.</p>
+          <p lang="ko">연구자들이 연구 주제를 정하고, 모델을 설계하고 평가하며, 분야를 넘어 협력하는 방식.</p>
+          <div class="q" lang="en">How are new possibilities in AI discovered and verified?</div>
+          <div class="q" lang="ko">AI의 새로운 가능성은 어떻게 발견되고 검증될까?</div>
         </div>
       </div>
       <div class="stage">
-        <div class="city"><span lang="en">New York</span><span lang="ko">뉴욕</span><small lang="en">Industry</small><small lang="ko">산업</small></div>
+        <div class="city"><span lang="en">Industry</span><span lang="ko">산업</span><small class="mono">02</small></div>
         <div>
-          <p lang="en">Tech companies and engineering teams delivering AI to millions of users.</p>
-          <p lang="ko">테크 기업과 엔지니어링 팀이 수백만 명의 사용자에게 AI를 전달하는 곳.</p>
-          <div class="q" lang="en">How do global teams build and ship AI together?</div>
-          <div class="q" lang="ko">글로벌 팀은 어떻게 함께 AI를 만들고 출시할까?</div>
+          <p lang="en">How companies turn what is technically possible into features people need, and balance performance with practicality.</p>
+          <p lang="ko">기업이 기술적 가능성을 사용자와 시장에 맞는 기능으로 만들고, 성능과 실용성 사이의 균형을 잡는 방식.</p>
+          <div class="q" lang="en">How does AI technology become a real product or service?</div>
+          <div class="q" lang="ko">AI 기술은 어떻게 실제 제품과 서비스가 될까?</div>
         </div>
       </div>
       <div class="stage">
-        <div class="city"><span lang="en">Washington DC</span><span lang="ko">워싱턴 DC</span><small lang="en">Society &amp; Policy</small><small lang="ko">사회 · 정책</small></div>
+        <div class="city"><span lang="en">Society</span><span lang="ko">사회</span><small class="mono">03</small></div>
         <div>
-          <p lang="en">Standards bodies, policy institutes and public institutions deciding how AI is tested and used.</p>
-          <p lang="ko">표준 기관, 정책 연구소, 공공기관이 AI를 어떻게 검증하고 쓸지 정하는 곳.</p>
-          <div class="q" lang="en">Why should developers care about AI policy and standards?</div>
-          <div class="q" lang="ko">개발자는 왜 AI 정책과 표준에 관심을 가져야 할까?</div>
+          <p lang="en">How people interact with AI, how its results are checked and kept secure, and how privacy, copyright, and culture shape its use.</p>
+          <p lang="ko">사람이 AI와 상호작용하는 방식, 결과의 근거를 검증하고 보안을 지키는 방법, 그리고 개인정보·저작권·문화가 AI의 쓰임에 미치는 영향.</p>
+          <div class="q" lang="en">How is AI used and trusted by people and society?</div>
+          <div class="q" lang="ko">AI는 사람과 사회 속에서 어떻게 쓰이고 신뢰받을까?</div>
         </div>
       </div>
     </div>
+    <p class="where" lang="en"><b>Why New York and Boston?</b> Boston and Cambridge are where much of this work starts, in universities and research labs. New York is where it is put to use, across finance, healthcare, and media. The two are a train ride apart, so we can compare both in one trip.</p>
+    <p class="where" lang="ko"><b>왜 뉴욕과 보스턴인가요?</b> 보스턴·케임브리지는 대학과 연구소를 중심으로 연구에서 출발하는 현장이고, 뉴욕은 금융·의료·미디어 등 산업에서 AI가 쓰이는 현장입니다. 두 도시는 기차로 이어져 있어 한 번의 방문으로 두 현장을 비교할 수 있습니다.</p>
   </section>
 
   <!-- TEAM -->
@@ -295,7 +298,7 @@
           <p class="goal" lang="en">Through this visit, I hope to see how institutions and companies in the U.S. approach AI reliability and security.</p>
           <p class="goal" lang="ko">이번 방문을 통해 미국의 기관과 기업이 AI의 신뢰성과 보안을 어떻게 다루는지 직접 보고 싶습니다.</p>
           <div class="tags"><span class="tag">Trustworthy AI</span><span class="tag">AI Security</span></div>
-          <div class="links"><a href="https://www.linkedin.com/in/%EA%B9%80%EA%B7%9C%EB%B2%94-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%95%99%EA%B3%BC-397bba447/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/kimmykimmim" target="_blank" rel="noopener">GitHub</a></div>
+          <div class="links"><a href="https://www.linkedin.com/in/%EA%B9%80%EA%B7%9C%EB%B2%94-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%95%99%EA%B3%BC-397bba447/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/kimmykimmim" target="_blank" rel="noopener">GitHub</a><a href="mailto:kimgyubum123@g.skku.edu">Email</a></div>
         </div>
       </div>
       <div class="member">
@@ -310,6 +313,7 @@
           <p class="goal" lang="en">Through this visit, I hope to learn how these technologies are developed and applied in real-world industries, from technical architectures and development processes to the collaboration between creative and technical disciplines that brings innovative ideas to life.</p>
           <p class="goal" lang="ko">이번 방문을 통해 이 기술들이 실제 산업에서 어떻게 개발되고 적용되는지, 기술 구조와 개발 과정부터 혁신적인 아이디어를 현실로 만드는 창작과 기술 분야 간의 협업까지 배우고 싶습니다.</p>
           <div class="tags"><span class="tag">Generative &amp; Multimodal AI</span><span class="tag">XR</span><span class="tag">Interactive Systems</span></div>
+          <div class="links"><a href="mailto:aqua03rius@g.skku.edu">Email</a></div>
         </div>
       </div>
       <div class="member">
@@ -324,6 +328,7 @@
           <p class="goal" lang="en">On this trip, I want to learn how teams decide where and how to run AI models in production.</p>
           <p class="goal" lang="ko">이번 방문에서는 실제 서비스 환경에서 AI 모델을 어디서, 어떻게 돌릴지 팀들이 어떻게 결정하는지 배우고 싶습니다.</p>
           <div class="tags"><span class="tag">Computer Architecture</span><span class="tag">LLM Serving</span></div>
+          <div class="links"><a href="https://www.linkedin.com/in/%EC%A7%80%EC%9B%90-%EC%84%9C-74207a448/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:tapetapetap@naver.com">Email</a></div>
         </div>
       </div>
       <div class="member">
@@ -338,7 +343,7 @@
           <p class="goal" lang="en">Through this visit, I hope to learn from professionals in these areas and explore where my interests could lead.</p>
           <p class="goal" lang="ko">이번 방문을 통해 이 분야의 전문가들에게 배우고, 제 관심사가 어디로 이어질 수 있을지 탐색하고 싶습니다.</p>
           <div class="tags"><span class="tag">Deep Learning</span><span class="tag">AI Transformation</span></div>
-          <div class="links"><a href="https://www.linkedin.com/in/jiwoo-lee-3106a9302/" target="_blank" rel="noopener">LinkedIn</a></div>
+          <div class="links"><a href="https://www.linkedin.com/in/jiwoo-lee-3106a9302/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:pebble0725@g.skku.edu">Email</a></div>
         </div>
       </div>
       <div class="member">
@@ -400,8 +405,8 @@
   <section id="after">
     <h2><span class="hash mono">#</span><span lang="en">After the Trip</span><span lang="ko">방문 이후</span></h2>
     <table class="news">
-      <tr><td class="mono"><span lang="en">Feb 2027</span><span lang="ko">2027년 2월</span></td><td><span lang="en">Publish a trip report and interview notes on this site (with mentors' permission).</span><span lang="ko">방문 보고서와 인터뷰 기록을 이 사이트에 올립니다 (멘토님이 허락하신 내용만).</span></td></tr>
-      <tr><td class="mono"><span lang="en">Mar 2027</span><span lang="ko">2027년 3월</span></td><td><span lang="en">Host a sharing seminar for students in our department.</span><span lang="ko">학과 학생들을 위한 공유 세미나를 엽니다.</span></td></tr>
+      <tr><td class="mono"><span lang="en">Early Feb 2027</span><span lang="ko">2027년 2월 초</span></td><td><span lang="en">Organize our interview notes and check with each mentor what we may share.</span><span lang="ko">인터뷰 기록을 정리하고, 공개해도 되는 범위를 멘토님께 한 분씩 확인받습니다.</span></td></tr>
+      <tr><td class="mono"><span lang="en">Late Feb 2027</span><span lang="ko">2027년 2월 말</span></td><td><span lang="en">Publish the interview write-ups and our trip report on this site, and send them to the mentors we met.</span><span lang="ko">정리한 인터뷰와 탐방 리포트를 이 사이트에 올리고, 만나 뵌 멘토님들께 공유합니다.</span></td></tr>
     </table>
   </section>
 
@@ -416,8 +421,8 @@
 </main>
 
 <footer>
-  <span lang="en">© 2026 SKKU East Coast Team · Sungkyunkwan University Global Challenge</span>
-  <span lang="ko">© 2026 SKKU East Coast Team · 성균관대학교 글로벌 챌린지</span>
+  <span lang="en">© 2026 Team AIming · Sungkyunkwan University Global Challenge</span>
+  <span lang="ko">© 2026 Team AIming · 성균관대학교 글로벌 챌린지</span>
 </footer>
 
 <script>
@@ -434,7 +439,7 @@
 
   // language (default English; the first pick happens in <head> so the page never flashes the wrong language)
   const langBtn = document.getElementById('langBtn');
-  const TITLES = { en: 'SKKU East Coast Team · Global Challenge 2027', ko: 'SKKU East Coast Team · 글로벌 챌린지 2027' };
+  const TITLES = { en: 'AIming · SKKU Global Challenge 2027', ko: 'AIming · 성균관대학교 글로벌 챌린지 2027' };
   function applyLang(l) {
     root.dataset.lang = l;
     root.lang = l;

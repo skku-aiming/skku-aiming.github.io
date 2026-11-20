@@ -1,1 +1,1 @@
-# skku-east.github.io
+# skku-aiming.github.io

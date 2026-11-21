@@ -56,6 +56,8 @@
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  p, .q, .news td, .ask-list span { text-wrap: pretty; }
+  footer { text-wrap: balance; }
   .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
 
   /* navbar */
@@ -72,7 +74,7 @@
   @media (max-width: 640px) { nav a { display: none; } }
 
   /* about (hero) */
-  .about { padding: 64px 0 40px; display: grid; grid-template-columns: 1fr 200px; gap: 40px; align-items: start; }
+  .about { padding: 64px 0 40px; display: grid; grid-template-columns: 1fr 220px; gap: 40px; align-items: start; }
   .about h1 { font-size: clamp(30px, 5vw, 42px); font-weight: 300; letter-spacing: -0.02em; line-height: 1.2; }
   .about h1 b { font-weight: 700; }
   .about .sub { color: var(--muted); margin: 6px 0 22px; font-size: 15px; }
@@ -86,7 +88,7 @@
   .route-list li { position: relative; padding-left: 32px; margin-bottom: 16px; font-size: 14px; }
   .route-list li:last-child { margin-bottom: 0; }
   .route-list li::before { content: ""; position: absolute; left: 0; top: 5px; width: 18px; height: 18px; box-sizing: border-box; border-radius: 50%; background: var(--soft); border: 3px solid var(--accent); z-index: 1; }
-  .route-list b { display: block; }
+  .route-list b { display: block; white-space: nowrap; }
   .route-list span { color: var(--muted); font-size: 13px; }
   @media (max-width: 720px) { .about { grid-template-columns: 1fr; padding-top: 44px; } }
 
@@ -112,10 +114,10 @@
   .stage .city small { display: block; color: var(--accent); font-weight: 500; font-size: 13px; }
   .stage p { color: var(--muted); font-size: 15px; }
   .stage .q { margin-top: 8px; font-size: 14px; color: var(--text); }
-  .where { margin-top: 18px; font-size: 15px; color: var(--muted); }
+  .where { margin-top: 18px; padding-left: 170px; font-size: 15px; color: var(--muted); }
   .where b { color: var(--text); font-weight: 600; }
   .stage .q::before { content: "Q. "; color: var(--accent); font-weight: 600; }
-  @media (max-width: 600px) { .stage { grid-template-columns: 1fr; gap: 6px; } }
+  @media (max-width: 600px) { .stage { grid-template-columns: 1fr; gap: 6px; } .where { padding-left: 0; } }
 
   /* team */
   .team { display: grid; gap: 0; }
@@ -156,7 +158,12 @@
   /* news-like timeline */
   .news { width: 100%; border-collapse: collapse; font-size: 15px; }
   .news td { padding: 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
-  .news td:first-child { width: 150px; padding-right: 16px; color: var(--muted); font-size: 14px; white-space: nowrap; }
+  .news td:first-child { width: 170px; padding-right: 20px; color: var(--muted); font-size: 14px; white-space: nowrap; }
+  @media (max-width: 600px) {
+    .news, .news tbody, .news tr, .news td { display: block; }
+    .news td:first-child { width: auto; padding: 12px 0 0; border-bottom: none; }
+    .news td:last-child { padding: 2px 0 12px; }
+  }
 
   footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 13px; text-align: center; }
 
@@ -210,8 +217,8 @@
       <div class="sub" lang="ko">성균관대학교 · 글로벌 챌린지 프로그램 · 2027년 1월</div>
       <p lang="en">Five undergraduate students from <a href="https://www.skku.edu/eng/" target="_blank" rel="noopener">Sungkyunkwan University</a> in Seoul, Korea, studying software and AI.</p>
       <p lang="ko">서울 <a href="https://www.skku.edu/" target="_blank" rel="noopener">성균관대학교</a>에서 소프트웨어와 AI를 공부하는 학부생 5명입니다.</p>
-      <p lang="en">Through our university's Global Challenge program, we are visiting the U.S. East Coast to answer one question: <b>how does AI move from research to industry to society?</b> We want to see each step in person and learn from the people who make it happen.</p>
-      <p lang="ko">학교의 글로벌 챌린지 프로그램으로 미국 동부를 방문해 한 가지 질문의 답을 찾으려 합니다. <b>AI는 어떻게 연구에서 산업으로, 그리고 사회로 이어질까?</b> 그 과정의 각 단계를 직접 보고, 그 일을 해내는 사람들에게 배우고 싶습니다.</p>
+      <p lang="en">Our name is <b>AI</b> + <b>aiming</b>. Through our university's Global Challenge program, we are aiming at one question on the U.S. East Coast: <b>how does AI move from research to industry to society?</b> We want to see each step in person and learn from the people who make it happen.</p>
+      <p lang="ko">팀 이름 AIming은 <b>AI</b>와 <b>aiming</b>(겨냥하다)을 합친 말입니다. 학교의 글로벌 챌린지 프로그램으로 미국 동부를 방문해 한 가지 질문을 겨냥합니다. <b>AI는 어떻게 연구에서 산업으로, 그리고 사회로 이어질까?</b> 그 과정의 각 단계를 직접 보고, 그 일을 해내는 사람들에게 배우고 싶습니다.</p>
       <div class="badges">
         <span class="badge" lang="en">📅 January 21–30, 2027</span>
         <span class="badge" lang="ko">📅 2027년 1월 21~30일</span>

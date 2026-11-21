@@ -71,7 +71,7 @@
   nav a:hover { color: var(--accent); text-decoration: none; }
   .theme-btn { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; font-size: 15px; }
   .theme-btn:hover { color: var(--accent); border-color: var(--accent); }
-  @media (max-width: 640px) { nav a { display: none; } }
+  @media (max-width: 760px) { nav a { display: none; } }
 
   /* about (hero) */
   .about { padding: 64px 0 40px; display: grid; grid-template-columns: 1fr 220px; gap: 40px; align-items: start; }
@@ -139,6 +139,12 @@
     .avatar { width: 120px; height: 120px; font-size: 34px; }
   }
 
+  /* gallery: 위에 가로로 긴 사진 1장, 아래에 2장 */
+  .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .gallery img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 14px; background: var(--soft); }
+  .gallery img.wide { grid-column: 1 / -1; aspect-ratio: 20 / 9; }
+  .gallery-cap { margin-top: 12px; font-size: 13px; color: var(--muted); text-align: center; }
+
   /* ask list */
   .ask-list { list-style: none; display: grid; gap: 12px; }
   .ask-list li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--soft); }
@@ -193,6 +199,7 @@
     <nav>
       <a href="#journey"><span lang="en">Journey</span><span lang="ko">여정</span></a>
       <a href="#team"><span lang="en">Team</span><span lang="ko">팀</span></a>
+      <a href="#gallery"><span lang="en">Gallery</span><span lang="ko">사진</span></a>
       <a href="#mentors"><span lang="en">For Mentors</span><span lang="ko">멘토님께</span></a>
       <a href="#faq">FAQ</a>
       <a href="#contact"><span lang="en">Contact</span><span lang="ko">연락처</span></a>
@@ -369,6 +376,18 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- GALLERY: 사진을 더 넣으려면 photos/ 에 올리고 아래 div 안에 img 를 추가 (class="wide" 는 한 줄 전체를 쓰는 사진) -->
+  <section id="gallery">
+    <h2><span class="hash mono">#</span><span lang="en">Gallery</span><span lang="ko">사진</span></h2>
+    <div class="gallery">
+      <img class="wide" src="photos/meeting-1.jpg" width="1600" height="720" loading="lazy" alt="Team members talking around a table with their laptops open">
+      <img src="photos/meeting-2.jpg" width="1000" height="667" loading="lazy" alt="A team member in a meeting room with a teammate joining by video call on a tablet">
+      <img src="photos/meeting-3.jpg" width="1000" height="667" loading="lazy" alt="A teammate joining the meeting by video call">
+    </div>
+    <p class="gallery-cap" lang="en">Getting ready for the trip, in person and over video calls. Fall 2026.</p>
+    <p class="gallery-cap" lang="ko">탐방을 준비하는 회의 모습입니다. 캠퍼스가 떨어져 있어 대면과 화상 회의를 함께 하고 있습니다. (2026년 가을)</p>
   </section>
 
   <!-- FOR MENTORS -->
